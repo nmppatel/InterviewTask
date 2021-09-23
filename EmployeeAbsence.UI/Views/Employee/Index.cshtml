@@ -1,0 +1,60 @@
+﻿@model IEnumerable<EmployeeAbsence.UI.Models.EmployeeViewModel>
+
+@{
+  ViewData["Title"] = "List of Employees";
+  Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.2/css/jquery.dataTables.css">
+<h1>List of Employees</h1>
+<hr />
+<table class="table table-sm table-striped table-bordered m-2" id="tblEmployee">
+  <thead >
+    <tr>
+      <th>
+        @Html.DisplayNameFor(model => model.ID)
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.EmployeeNumber)
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.EmployeeName)
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.Department)
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.TotalAbsence)
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var item in Model)
+    {
+      <tr>
+        <td>
+          @Html.DisplayFor(modelItem => item.ID)
+        </td>
+        <td>
+          @Html.DisplayFor(modelItem => item.EmployeeNumber)
+        </td>
+        <td>
+          @Html.DisplayFor(modelItem => item.EmployeeName)
+        </td>
+        <td>
+          @Html.DisplayFor(modelItem => item.Department)
+        </td>
+        <td>
+          @Html.DisplayFor(modelItem => item.TotalAbsence)
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>
+@section Scripts {
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#tblEmployee').DataTable();
+  });
+</script>
+}
