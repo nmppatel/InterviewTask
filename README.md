@@ -19,3 +19,6 @@ Summary
 2. add controller >> Index >> view >> show list of employee details 
 3. Index action >> call web api to get employee details and deserialized json object to model class 
 4. used jquery and datatable js to use paging/sorting/search/filter
+
+
+![image](https://user-images.githubusercontent.com/11857448/134523630-8ea3b9e4-bfd7-41b0-8887-29734569b5e1.png)
