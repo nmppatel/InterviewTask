@@ -20,5 +20,12 @@ Summary
 3. Index action >> call web api to get employee details and deserialized json object to model class 
 4. used jquery and datatable js to use paging/sorting/search/filter
 
+below is the result of API return list of employees
+![image](https://user-images.githubusercontent.com/11857448/134523958-1ef98f55-3e3e-4bb2-af26-5654f7244bd7.png)
+
+
+below is the screenshot of result to display on UI 
 
 ![image](https://user-images.githubusercontent.com/11857448/134523630-8ea3b9e4-bfd7-41b0-8887-29734569b5e1.png)
+
+
